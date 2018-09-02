@@ -17,7 +17,7 @@ public class MergeSort {
 		
 		int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 		
-		mergeSort(intArray, 0, 7);
+		mergeSort(intArray, 0, intArray.length);
 		System.out.println(Arrays.toString(intArray));
 
 	}
