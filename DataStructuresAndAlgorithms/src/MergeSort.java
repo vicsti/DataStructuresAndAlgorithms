@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class MergeSort {
 	//Divide and conqure algorithm
@@ -15,7 +16,9 @@ public class MergeSort {
 	public static void main(String[] args) {
 		
 		int[] intArray = {20, 35, -15, 7, 55, 1, -22};
-
+		
+		mergeSort(intArray, 0, 7);
+		System.out.println(Arrays.toString(intArray));
 
 	}
 	
@@ -33,15 +36,19 @@ public class MergeSort {
 	
 	public static void merge(int[] intArray, int start, int mid, int end) {
 		int[] tempArray = new int[end - start];
-		int leftLength=mid - start;
-		int rightLength=end - mid;
-		int i=0, j=0, k=0;
+		int i=start, j=mid, k=0;
 		
-		
-		while(i<leftLength && j< rightLength) {
-			//tempArray[k++] = intArray[start] <= intArray[mid]
-			
+		while(i<mid && j< end) {
+			tempArray[k++] = intArray[i] <= intArray[j] ? intArray[i++] : intArray[j++];
 		}
+		while(i<mid) {
+			tempArray[k++] = intArray[i++];			
+		}
+		while(j<end) {
+			tempArray[k++] = intArray[j++];			
+		}
+		System.arraycopy(tempArray, 0, intArray, start, end - start);
+		
 	}
 
 }
