@@ -19,14 +19,14 @@ public class InsertionSortUsingRecurssion {
 		System.out.println(Arrays.toString(intArray));
 		
 		for(int firstUnsortedIndex = 1; firstUnsortedIndex< intArray.length; firstUnsortedIndex++) {
-			findIndex(intArray, firstUnsortedIndex-1, intArray[firstUnsortedIndex], 0);
+			findIndex(intArray, firstUnsortedIndex-1, intArray[firstUnsortedIndex]);
 			System.out.println(Arrays.toString(intArray));
 		}
 		//System.out.println(Arrays.toString(intArray));
 
 	}
 	
-	public static void findIndex(int[] input, int end, int pivot, int index) {
+	public static void findIndex(int[] input, int end, int pivot) {
 		if(end < 0) {
 			input[end+1]=pivot;
 			return;
@@ -36,10 +36,9 @@ public class InsertionSortUsingRecurssion {
 			return;
 		} 
 		if(input[end] > pivot) {
-			input[end+1]=input[end];
-			index = end;
+			input[end+1]=input[end];			
 		} 
-		findIndex(input, end-1, pivot, index);		
+		findIndex(input, end-1, pivot);		
 	}
 
 }
