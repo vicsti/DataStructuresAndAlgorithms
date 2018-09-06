@@ -10,7 +10,7 @@ public class ArrayStacks {
 	//pop - Removes the element at the top of the stack
 	//peek - Get the top element without removing it.
 	//Ideal backing data structure is Linked List.
-	//
+	// Dequeue class implements the stack
 	//
 	//
 	//
