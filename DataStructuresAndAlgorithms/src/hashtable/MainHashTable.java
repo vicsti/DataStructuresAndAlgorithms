@@ -11,5 +11,9 @@ public class MainHashTable {
 	//
 	//
 	//
+	public static void main(String[] agrs) {
+		
+		
+	}
 
 }
