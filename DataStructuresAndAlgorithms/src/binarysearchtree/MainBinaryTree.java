@@ -1,6 +1,6 @@
-package tree;
+package binarysearchtree;
 
-public class MainTree {
+public class MainBinaryTree {
 	//Every Item in the tree is a node
 	//The Node at the top of the tree is the root
 	//Every non-root node has one and only parent
@@ -37,5 +37,26 @@ public class MainTree {
 	//root
 	//Because of that, we can do a Binary search.
 	//How do duplicates work in Binary search tree.
+	
+	//TRAVERSAL
+	//Level- Visit nodes on each level.
+	//Pre-order - Visit the root of every subtree first.
+	//Post-order - Visit the root of every subtree last.
+	//In-Order - Visit left Child, then root, then the right child.
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Tree intTree = new Tree();
+		intTree.insert(25);
+		intTree.insert(20);
+		intTree.insert(15);
+		intTree.insert(27);
+		intTree.insert(30);
+		intTree.insert(29);
+		intTree.insert(26);
+		intTree.insert(22);
+		intTree.insert(32);
+	}
 
 }
