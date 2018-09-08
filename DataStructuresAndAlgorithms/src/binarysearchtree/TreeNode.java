@@ -28,6 +28,17 @@ public class TreeNode {
 		}
 		
 	}
+	
+	public void traverseInOrder() {
+		if (leftChild!=null) {
+			leftChild.traverseInOrder();
+		}
+		System.out.print(data+" ");
+		if (rightChild!=null) {
+			rightChild.traverseInOrder();
+		}
+		
+	}
 	public int getData() {
 		return data;
 	}

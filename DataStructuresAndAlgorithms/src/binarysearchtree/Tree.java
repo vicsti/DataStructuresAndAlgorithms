@@ -11,5 +11,9 @@ public class Tree {
 			root.insert(value);
 		}
 	}
+	
+	public void inorderTraversal() {
+		root.traverseInOrder();
+	}
 
 }

@@ -39,10 +39,11 @@ public class MainBinaryTree {
 	//How do duplicates work in Binary search tree.
 	
 	//TRAVERSAL
-	//Level- Visit nodes on each level.
+	//Level- Visit nodes on each level. Not used very often
 	//Pre-order - Visit the root of every subtree first.
 	//Post-order - Visit the root of every subtree last.
 	//In-Order - Visit left Child, then root, then the right child.
+	//In-order treversal results in sorted order of the array.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -57,6 +58,8 @@ public class MainBinaryTree {
 		intTree.insert(26);
 		intTree.insert(22);
 		intTree.insert(32);
+		
+		intTree.inorderTraversal();
 	}
 
 }
