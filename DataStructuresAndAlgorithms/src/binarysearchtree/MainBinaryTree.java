@@ -60,6 +60,12 @@ public class MainBinaryTree {
 		intTree.insert(32);
 		
 		intTree.inorderTraversal();
-	}
+		
+		//System.out.println("\nData: "+intTree.getNode(27).getData());
+		//System.out.println("Data: "+intTree.getNode(37));
+		//System.out.println("Data: "+intTree.getNode(32).getData());
+		System.out.println("MIN: "+intTree.min());
+		System.out.println("MAX: "+intTree.max());
+		}
 
 }
