@@ -4,6 +4,10 @@ public class palindromNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String a="The";
+		String b="cat";
+		a=a+b;
+		System.out.println(a);
 		if(11 == palindromNumber.checkPalindrom(11, 0)) {
 			System.out.print("IS A PAL");
 		} else {
