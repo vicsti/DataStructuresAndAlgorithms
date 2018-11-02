@@ -16,12 +16,9 @@ public class nqueenProblem {
 			if(board.isSafe(row, col)) {
 				board.placeQueen(row, col);
 				if(solve(board, col+1)) return true;
-				board.removeQueen(row, col);
-				
+				board.removeQueen(row, col);				
 			}
-		}
-		
-		return false;
-		
+		}		
+		return false;		
 	}
 }
